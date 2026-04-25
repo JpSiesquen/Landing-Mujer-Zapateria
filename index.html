@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariana — Zapatos de mujer con alma. Descubre nuestra colección de tacones, botas, sandalias y sneakers diseñados en Madrid.">
+  <title>Mariana | Zapatos de Mujer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <a href="#inicio" class="navbar__logo">Mariana</a>
+    <nav class="navbar__nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#nosotras">Nosotras</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#coleccion">Colección</a></li>
+        <li><a href="#lookbook">Lookbook</a></li>
+        <li><a href="#ubicacion">Tienda</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menú de navegación">
+    <button class="mobile-nav__close" id="mobile-nav-close">Cerrar</button>
+    <a href="#nosotras">Nosotras</a>
+    <a href="#productos">Productos</a>
+    <a href="#coleccion">Colección</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#ubicacion">Tienda</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-label="Portada">
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__eyebrow">Nueva Colección 2026</span>
+        <h1 class="hero__title">
+          Elegancia
+          <em>en cada paso</em>
+        </h1>
+        <p class="hero__sub">Piezas que hablan por ti.</p>
+        <a href="#coleccion" class="btn btn--primary">Descubrir colección</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- SOBRE LA MARCA -->
+    <section class="about" id="nosotras">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <span class="label">Nuestra historia</span>
+            <h2>Nacimos para quien<br><em>sabe lo que quiere</em></h2>
+            <p>Mariana nació de una obsesión: crear zapatos que no solo acompañen tu andar, sino que definan tu presencia. Desde nuestra primera colección, apostamos por materiales nobles, siluetas atemporales y un cuidado artesanal que se siente en cada detalle.</p>
+            <p>No hacemos tendencias. Hacemos piezas que duran, que se recuerdan, que se heredan.</p>
+            <a href="#productos" class="link-arrow">Conocer nuestra historia →</a>
+          </div>
+          <div class="about__image reveal reveal-delay-2">
+            <img
+              class="about__img"
+              src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=900&q=80"
+              alt="Modelo con estilo en sesión editorial de moda femenina"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="products" id="productos">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Lo más deseado</span>
+          <h2>Piezas que no pasan de moda</h2>
+          <p class="section-sub">Una selección cuidadosa para cada momento de tu vida.</p>
+        </header>
+        <div class="products__grid">
+
+          <article class="product-card reveal">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?w=600&q=80" alt="Camille — salón de tacón fino en nude" loading="lazy">
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Camille</p>
+            <p class="product-card__type">Salón de tacón fino</p>
+            <p class="product-card__price">€149</p>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1544441893-675973e31985?w=600&q=80" alt="Darya — botín de caña alta en cuero negro" loading="lazy">
+              <span class="product-card__badge">Nuevo</span>
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Darya</p>
+            <p class="product-card__type">Botín de caña alta</p>
+            <p class="product-card__price">€189</p>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4?w=600&q=80" alt="Soleil — sandalia de tiras en cuero natural" loading="lazy">
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Soleil</p>
+            <p class="product-card__type">Sandalia de tiras</p>
+            <p class="product-card__price">€115</p>
+          </article>
+
+          <article class="product-card reveal reveal-delay-3">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=600&q=80" alt="Alba — sneaker urbana en blanco" loading="lazy">
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Alba</p>
+            <p class="product-card__type">Sneaker urbana</p>
+            <p class="product-card__price">€125</p>
+          </article>
+
+          <article class="product-card reveal">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=600&q=80" alt="Celeste — tacón metálico en rose gold" loading="lazy">
+              <span class="product-card__badge">Bestseller</span>
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Celeste</p>
+            <p class="product-card__type">Tacón metálico rosado</p>
+            <p class="product-card__price">€159</p>
+          </article>
+
+          <article class="product-card reveal reveal-delay-1">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1465877783223-4eba513e27c6?w=600&q=80" alt="Renata — chelsea boot de cuero camel" loading="lazy">
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Renata</p>
+            <p class="product-card__type">Chelsea de cuero camel</p>
+            <p class="product-card__price">€175</p>
+          </article>
+
+          <article class="product-card reveal reveal-delay-2">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4b4057?w=600&q=80" alt="Isla — sandalia de tacón destalonada" loading="lazy">
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Isla</p>
+            <p class="product-card__type">Sandalia destalonada</p>
+            <p class="product-card__price">€138</p>
+          </article>
+
+          <article class="product-card reveal reveal-delay-3">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80" alt="Blanche — sneaker minimalista en blanco" loading="lazy">
+              <a href="#" class="btn btn--primary product-card__hover-cta">Ver pieza</a>
+            </div>
+            <p class="product-card__name">Blanche</p>
+            <p class="product-card__type">Sneaker minimalista</p>
+            <p class="product-card__price">€119</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLECCIONES -->
+    <section class="collections" id="coleccion">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Nuestras colecciones</span>
+          <h2>Encuentra tu estilo</h2>
+          <p class="section-sub">Desde la pasarela hasta la acera — hay una Mariana para cada faceta tuya.</p>
+        </header>
+        <div class="collections__grid">
+
+          <div class="collection-card reveal" style="background-image: url('https://images.unsplash.com/photo-1617952817991-5e6cb1b6e913?w=800&q=80');" role="img" aria-label="Colección Tacones">
+            <div class="collection-card__overlay"></div>
+            <h3 class="collection-card__label">Tacones</h3>
+            <span class="collection-card__cta">Explorar →</span>
+          </div>
+
+          <div class="collection-card reveal reveal-delay-1" style="background-image: url('https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=800&q=80');" role="img" aria-label="Colección Botas">
+            <div class="collection-card__overlay"></div>
+            <h3 class="collection-card__label">Botas</h3>
+            <span class="collection-card__cta">Explorar →</span>
+          </div>
+
+          <div class="collection-card reveal reveal-delay-2" style="background-image: url('https://images.unsplash.com/photo-1467321563889-d9a5bafdec04?w=800&q=80');" role="img" aria-label="Colección Sandalias">
+            <div class="collection-card__overlay"></div>
+            <h3 class="collection-card__label">Sandalias</h3>
+            <span class="collection-card__cta">Explorar →</span>
+          </div>
+
+          <div class="collection-card reveal reveal-delay-3" style="background-image: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80');" role="img" aria-label="Colección Sneakers">
+            <div class="collection-card__overlay"></div>
+            <h3 class="collection-card__label">Sneakers</h3>
+            <span class="collection-card__cta">Explorar →</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER PROMOCIONAL -->
+    <section class="promo-banner" aria-label="Campaña de temporada">
+      <div class="promo-banner__inner">
+        <span class="label label--light reveal">Temporada Primavera · Verano 2026</span>
+        <h2 class="promo-banner__title reveal">
+          Nueva temporada,
+          <em>nuevas historias</em>
+        </h2>
+        <p class="promo-banner__sub reveal">La colección que esperabas. Edición limitada, disponible ahora.</p>
+        <a href="#coleccion" class="btn btn--outline-white reveal reveal-delay-1">Ver la campaña</a>
+      </div>
+    </section>
+
+    <!-- LOOKBOOK -->
+    <section class="lookbook" id="lookbook">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="label">Editorial</span>
+          <h2>El mundo visto desde tus zapatos</h2>
+          <p class="section-sub">Imágenes que capturan más que moda — capturan actitud.</p>
+        </header>
+        <div class="lookbook__grid">
+
+          <figure class="lookbook__item reveal">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=800&q=80" alt="Tacones metálicos rose gold, detalle de producto" loading="lazy">
+          </figure>
+
+          <figure class="lookbook__item reveal reveal-delay-1">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Detalle de outfit con zapatos de diseñador" loading="lazy">
+          </figure>
+
+          <figure class="lookbook__item reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="Estilo urbano con sandalias de temporada" loading="lazy">
+          </figure>
+
+          <figure class="lookbook__item lookbook__item--wide reveal">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200&q=80" alt="Sesión fotográfica de moda, colección Mariana" loading="lazy">
+          </figure>
+
+          <figure class="lookbook__item reveal reveal-delay-1">
+            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&q=80" alt="Modelo con botas en ambiente de pasarela" loading="lazy">
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta" aria-label="Llamada a la acción">
+      <div class="container">
+        <div class="final-cta__line reveal" aria-hidden="true"></div>
+        <h2 class="reveal">
+          Descubre
+          <em>tu estilo</em>
+        </h2>
+        <p class="reveal reveal-delay-1">La tienda está abierta. Tu próximo par favorito te está esperando.</p>
+        <div class="final-cta__actions reveal reveal-delay-2">
+          <a href="#productos" class="btn btn--white">Compra ahora</a>
+          <a href="#lookbook" class="btn btn--outline-white">Ver lookbook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="map-section" id="ubicacion">
+      <div class="container">
+        <div class="map-section__inner">
+
+          <div class="map-section__info reveal">
+            <span class="label">Encuéntranos</span>
+            <h3>Visítanos<br>en Madrid</h3>
+            <address>
+              <strong>Dirección</strong>
+              Calle Serrano, 42<br>
+              Barrio de Salamanca<br>
+              28001 Madrid, España
+              <strong>Horario</strong>
+              Lunes a sábado: 10:00 – 20:00<br>
+              Domingo: 12:00 – 18:00
+              <strong>Contacto</strong>
+              <a href="tel:+34910000000">+34 91 000 00 00</a><br>
+              <a href="mailto:hola@mariana.es">hola@mariana.es</a>
+            </address>
+          </div>
+
+          <div class="map-section__map reveal reveal-delay-2">
+            <iframe
+              src="https://maps.google.com/maps?q=Calle+Serrano+42,+Madrid,+Spain&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              title="Ubicación de Mariana — Calle Serrano 42, Madrid"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__main">
+
+        <div class="footer__brand">
+          <span class="footer__logo">Mariana</span>
+          <span class="footer__tagline">Elegancia en cada paso</span>
+          <p>Zapatos de mujer con alma. Diseñados en Madrid, hechos para el mundo.</p>
+          <nav class="footer__social" aria-label="Redes sociales">
+            <a href="#" class="footer__social-link" aria-label="Instagram de Mariana">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest de Mariana">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="TikTok de Mariana">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+          </nav>
+        </div>
+
+        <div>
+          <span class="footer__col-title">Navegación</span>
+          <ul class="footer__links-list">
+            <li><a href="#nosotras">Nuestra historia</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#coleccion">Colecciones</a></li>
+            <li><a href="#lookbook">Lookbook</a></li>
+            <li><a href="#ubicacion">Tienda física</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer__col-title">Contacto</span>
+          <div class="footer__contact-item">
+            <span>Dirección</span>
+            <span>Calle Serrano, 42 · Madrid</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Teléfono</span>
+            <span><a href="tel:+34910000000">+34 91 000 00 00</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Email</span>
+            <span><a href="mailto:hola@mariana.es">hola@mariana.es</a></span>
+          </div>
+          <div class="footer__contact-item">
+            <span>Horario</span>
+            <span>Lun–Sáb: 10:00 – 20:00</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Mariana. Todos los derechos reservados.</span>
+        <span>Hecho con amor en Madrid</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
